@@ -1,0 +1,11 @@
+<div *ngFor="let cardData of cardData$ | async">
+    <div>
+        <li>count:{{ cardData.payload.count}}</li>
+        <li><button (click)="load(cardData.payload.next)">Next</button></li>
+        <li><button (click)="load(cardData.payload.previous)">Previous</button></li>
+
+    </div>
+    <div class="column" *ngFor="let card of cardData.payload.results">
+        <div class="card" (click)="loadCartDetails(card.url)">{{card.name }}</div>
+    </div>
+</div>

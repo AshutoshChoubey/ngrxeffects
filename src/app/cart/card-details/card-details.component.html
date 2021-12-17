@@ -1,0 +1,21 @@
+
+<div> <button (click)="back()">back</button></div>
+<div class="card" ><img [src]="image" height="100%">
+    <table calss="">
+        <tr>
+            <th>Name:</th>
+            <th>{{name}}</th>
+        </tr>
+        <tr>
+            <td>Forms:</td>
+            <td>{{forms | json}}</td>
+        </tr>
+        <tr>
+            <td>Abilities:</td>
+            <td>{{abilities | json}}</td>
+        </tr>
+    </table>
+<!-- <li>Name:{{name}}</li>
+<li>Forms:{{forms | json}}</li>
+<li>Abilities:{{abilities | json}}</li> -->
+</div>
